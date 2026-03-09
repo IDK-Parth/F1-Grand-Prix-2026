@@ -70,17 +70,39 @@ team_perf = {t:p/max_pts for t,p in team_points.items()}
 # DRIVER TEAM MAP
 # ==========================================
 driver_team_map = {
-"NOR":"McLaren","PIA":"McLaren",
-"HAM":"Ferrari","LEC":"Ferrari",
-"VER":"Red Bull","LAW":"Red Bull",
-"RUS":"Mercedes","ANT":"Mercedes",
-"ALB":"Williams","COL":"Williams",
-"ALO":"Aston Martin","STR":"Aston Martin",
-"OCO":"Haas","BEA":"Haas",
-"HAD":"Racing Bulls","LIN":"Racing Bulls",
-"HUL":"Audi","BOT":"Audi",
-"GAS":"Alpine","SAI":"Alpine",
-"PER":"Cadillac","BOR":"Cadillac"
+    "NOR": "McLaren",       # Lando Norris
+    "PIA": "McLaren",       # Oscar Piastri
+
+    "HAM": "Ferrari",       # Lewis Hamilton
+    "LEC": "Ferrari",       # Charles Leclerc
+
+    "VER": "Red Bull",      # Max Verstappen
+    "HAD": "Red Bull",      # Isack Hadjar 
+
+    "RUS": "Mercedes",      # George Russell
+    "ANT": "Mercedes",      # Andrea Kimi Antonelli
+
+    "ALB": "Williams",      # Alexander Albon
+    "SAI": "Williams",      # Carlos Sainz 
+
+    "ALO": "Aston Martin",  # Fernando Alonso
+    "STR": "Aston Martin",  # Lance Stroll
+
+    "OCO": "Haas",          # Esteban Ocon
+    "BEA": "Haas",          # Oliver Bearman
+
+    "HAD": "Racing Bulls",  # Isack Hadjar
+    "LIN": "Racing Bulls",  # Lindbald
+
+    "HUL": "Audi",          # Nico Hulkenberg
+    "BOR": "Audi",          # Gabriel Bortoleto
+
+    "GAS": "Alpine",        # Pierre Gasly
+    "COL": "Alpine",        # Colapinto
+
+    "PER": "Cadillac",      # Sergio Perez
+    "BOT": "Cadillac"       # Valtteri Bottas
+    
 }
 
 Q_2026["Team"] = Q_2026["Driver"].map(driver_team_map)
